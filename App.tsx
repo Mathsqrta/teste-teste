@@ -17,14 +17,15 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    /*flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center',*/
   },
   header: {
       height: 93,
-      backgroundColor: #2C4877,
+      marginTop: 40,
+      backgroundColor: '#2C4877',
       
   }
 });
