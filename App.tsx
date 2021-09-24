@@ -2,6 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
+const LinksImportantes = () => {
+
+  return(<View> 
+    <Text> 
+      Meu primeiro componente
+      </Text> 
+      </View>
+      );
+};
 export default function App() {
   return (
     <View style={styles.container}>
@@ -20,7 +29,7 @@ export default function App() {
         
         <Image source={require("./src/assets/share.png")}></Image>
 
-        <Text>]</Text>
+        <Text></Text>
         
       </View>
       <Text>teste teste teste</Text>
@@ -37,11 +46,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',*/
   },
   header: {
-      minHeight: 93,
+      minHeight: 70,
       marginTop: 23,
       backgroundColor: '#4369B0',
       flexDirection: 'row',
       justifyContent: 'space-between',
+       alignItems: 'center',
   },
   inputTextView:{
       flex: 1,
@@ -59,4 +69,5 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingRight: 10,
   }
-});
+}
+);
