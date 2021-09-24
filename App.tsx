@@ -2,12 +2,49 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
+const obj1 = {backgroundColor: "red", marginTop: 10};
+const LinkItem = (props:any) => {
+  return(
+      <Text style = {{ marginTop: 10}}> {props.name}</Text>
+
+  );
+
+}
+
+const stylesLink = StyleSheet.create({
+
+  text:{
+    marginTop: 2,  
+    color: '#4A4A4C',
+    fontSize: 13.71,
+  }
+
+});
+
+const stylesLinksImportantes = StyleSheet.create({
+
+  container:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#FFFFFF',
+    borderBottomColor: "red",
+    borderBottomWidth: 1, 
+
+  }
+
+});
 const LinksImportantes = () => {
 
-  return(<View> 
-    <Text> 
-      Meu primeiro componente
-      </Text> 
+  return(<View style={stylesLinksImportantes.container}>
+    
+    <LinkItem name = "Home"/>
+    <LinkItem name = "Posts"/>
+    <LinkItem name = "Vídeos"/>
+    <LinkItem name = "Photos"/>
+    <LinkItem name = "Community"/>
+
       </View>
       );
 };
@@ -22,7 +59,7 @@ export default function App() {
           <Image source={require("./src/assets/ei_search.png")}></Image>
           <TextInput 
           placeholder="Search"
-          placeholderTextColor="F5FFFF"
+          placeholderTextColor="#F5FFFF"
           style={styles.textInput}
           ></TextInput> 
         </View>
@@ -32,7 +69,8 @@ export default function App() {
         <Text></Text>
         
       </View>
-      <Text>teste teste teste</Text>
+      <Text></Text>
+      <LinksImportantes />
       <StatusBar style="auto" />
     </View>
   );
@@ -65,7 +103,6 @@ const styles = StyleSheet.create({
   },
   textInput:{
     color:"#F5FFFF",
-    //maxWidth: 200,
     flex: 1,
     paddingRight: 10,
   }
