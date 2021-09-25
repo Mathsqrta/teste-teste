@@ -56,6 +56,7 @@ const Login = () => {
 
         },
         body:{
+            marginBottom: 30,
         },
         inputTextView:{
             flex: 1,
@@ -85,6 +86,7 @@ const Login = () => {
         },
         Login:{
             backgroundColor: '#455CB1',
+            
 
         }
 });
