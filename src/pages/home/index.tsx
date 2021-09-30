@@ -1,7 +1,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View, Text, Image, TextInput } from 'react-native';
+import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import { stylesLink } from './styles';
 import { stylesLinksImportantes } from './styles';
 import { styles } from './styles';
@@ -29,6 +29,10 @@ const LinksImportantes = () => {
       );
 };
 const Home = () => {
+  function irParaTelaLogin(){
+    {console.log("oi")}
+  }
+
     return(
 
         <View style={styles.container}>
@@ -46,13 +50,16 @@ const Home = () => {
           </View>
           
           <Image source={require("../../assets/share.png")}></Image>
-  
-          <Text></Text>
           
         </View>
-        <Text></Text>
+        
         <LinksImportantes />
         <StatusBar style="auto" />
+        <View style={styles.conteudoFacebook}>
+        <TouchableOpacity style={styles.btt} onPress={irParaTelaLogin()}>
+           <Text style={{color: '#FFFF'}}>segunda pagina</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
 }

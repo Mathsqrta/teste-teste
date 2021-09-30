@@ -51,7 +51,24 @@ export const styles = StyleSheet.create({
       color:"#F5FFFF",
       flex: 1,
       paddingRight: 10,
-    }
+    },
+    btt:{
+        backgroundColor: '#4369B0',
+        color: '#FFFF',
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginHorizontal:60,
+        borderRadius: 10,
+        marginTop: 100,
+
+    },
+    conteudoFacebook:{
+        flex: 1,
+        justifyContent: 'flex-end',
+        paddingVertical: 20,
+        
+    },
   }
 
 

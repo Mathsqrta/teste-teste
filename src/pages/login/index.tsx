@@ -1,5 +1,5 @@
 import React from 'react';
-import {  View, Text, Image, TextInput} from 'react-native';
+import {  View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import { styles } from './styles';
 
 const Login = () => {
@@ -17,28 +17,25 @@ const Login = () => {
                     style={styles.textInput}
                     ></TextInput> 
                 
-               
                     <TextInput 
                     style={styles.textInput}
                     placeholder="Password"
                     placeholderTextColor="#808080"/> 
-                
+                <TouchableOpacity />
                     <TextInput 
                     style={styles.textInputBtt}
                     placeholder="Log In"
                     placeholderTextColor="#FFFFFF"
                     />
                 
-                
-                <Text style={{
-                color:'#FFFFFF',
-                fontSize: 15,
-                textDecorationLine: 'underline', 
-                textAlign: 'center',
-                marginBottom: 70
-                }}>Sing up to Facebook
-                </Text>
-
+                    <Text style={{
+                    color:'#FFFFFF',
+                    fontSize: 15,
+                    textDecorationLine: 'underline', 
+                    textAlign: 'center',
+                    marginBottom: 70
+                    }}>Sing up to Facebook
+                    </Text>
             </View>
         </View>   
          
