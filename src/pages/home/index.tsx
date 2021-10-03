@@ -1,11 +1,15 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
 import { stylesLink } from './styles';
 import { stylesLinksImportantes } from './styles';
 import { styles } from './styles';
-
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigatorProps } from '@react-navigation/native-stack/lib/typescript/src/types';
+import { StackNavigatorParamList } from '../../../types';
+import { Post } from '../post'; 
 
 const obj1 = {backgroundColor: "red", marginTop: 0};
 
@@ -28,9 +32,13 @@ const LinksImportantes = () => {
       </View>
       );
 };
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Home">
 const Home = () => {
+
+const navigation = useNavigation<HomeProps>();
+
   function irParaTelaLogin(){
-    {console.log("oi")}
+    navigation.navigate('Login');
   }
 
     return(
@@ -54,10 +62,16 @@ const Home = () => {
         </View>
         
         <LinksImportantes />
+        <Post />
+
+
+
+
         <StatusBar style="auto" />
+
         <View style={styles.conteudoFacebook}>
-        <TouchableOpacity style={styles.btt} onPress={irParaTelaLogin()}>
-           <Text style={{color: '#FFFF'}}>segunda pagina</Text>
+        <TouchableOpacity style={styles.btt} onPress={irParaTelaLogin}>
+           <Text style={{color: '#FFFF'}}>Learn more</Text>
           </TouchableOpacity>
         </View>
       </View>

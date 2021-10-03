@@ -39,6 +39,17 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom:100,
     },
+    btt:{
+        backgroundColor: '#3B4885',
+        color: '#FFFF',
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginHorizontal:10,
+        marginBottom: 90,
+        marginTop: 10
+
+    },
     imagem:{
         flex: 1,
         marginTop: 250,

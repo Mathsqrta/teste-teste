@@ -1,8 +1,17 @@
 import React from 'react';
 import {  View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import { styles } from './styles';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigatorParamList } from '../../../types';
 
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Login">
 const Login = () => {
+
+    const navigation = useNavigation<HomeProps>();
+    function irParaHome(){
+        navigation.navigate('Home');
+      }
     return(
         <View style={styles.container}> 
             <View style={styles.body}>  
@@ -21,19 +30,16 @@ const Login = () => {
                     style={styles.textInput}
                     placeholder="Password"
                     placeholderTextColor="#808080"/> 
-                <TouchableOpacity />
-                    <TextInput 
-                    style={styles.textInputBtt}
-                    placeholder="Log In"
-                    placeholderTextColor="#FFFFFF"
-                    />
-                
+                <TouchableOpacity style={styles.btt} onPress={irParaHome}>
+                <Text style={{color: '#FFFF'}}>Log in</Text>
+                </TouchableOpacity>
                     <Text style={{
                     color:'#FFFFFF',
                     fontSize: 15,
                     textDecorationLine: 'underline', 
                     textAlign: 'center',
-                    marginBottom: 70
+                    marginBottom: 70,
+                    marginTop: 10
                     }}>Sing up to Facebook
                     </Text>
             </View>
