@@ -1,7 +1,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { stylesLink } from './styles';
 import { stylesLinksImportantes } from './styles';
 import { styles } from './styles';
@@ -46,10 +46,10 @@ const navigation = useNavigation<HomeProps>();
         <View style={styles.container}>
         <View style={styles.header}>
   
-          <Image source={require("../../assets/seta.png")}></Image>
+          <Image style={{height: 30, width: 15, marginLeft: 10}} source={require("../../assets/seta.png")}></Image>
   
           <View style={styles.inputTextView}>
-            <Image source={require("../../assets/ei_search.png")}></Image>
+            <Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/ei_search.png")}></Image>
             <TextInput 
             placeholder="Search"
             placeholderTextColor="#F5FFFF"
@@ -57,22 +57,23 @@ const navigation = useNavigation<HomeProps>();
             ></TextInput> 
           </View>
           
-          <Image source={require("../../assets/share.png")}></Image>
+          <Image style={{height: 30, width:30, marginRight: 10}} source={require("../../assets/share.png")}></Image>
           
         </View>
         
         <LinksImportantes />
-        <Post />
-
-
-
-
+        <TouchableOpacity style={styles.btt} onPress={irParaTelaLogin}>
+           <Text style={{color: '#FFFF'}}>Segunda Tela</Text>
+        </TouchableOpacity>
+        <ScrollView> 
+          <Post />
+          <Post />
+          <Post />
+          <Post />
+        </ScrollView> 
         <StatusBar style="auto" />
 
         <View style={styles.conteudoFacebook}>
-        <TouchableOpacity style={styles.btt} onPress={irParaTelaLogin}>
-           <Text style={{color: '#FFFF'}}>Learn more</Text>
-          </TouchableOpacity>
         </View>
       </View>
     );

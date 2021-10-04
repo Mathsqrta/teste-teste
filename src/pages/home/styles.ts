@@ -18,8 +18,6 @@ export const stylesLinksImportantes = StyleSheet.create({
       paddingHorizontal: 20,
       paddingVertical: 10,
       backgroundColor: '#FFFFFF',
-      borderBottomColor: "red",
-      borderBottomWidth: 1, 
       marginTop: 0,
     }
   
@@ -27,7 +25,7 @@ export const stylesLinksImportantes = StyleSheet.create({
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      
+      backgroundColor: '#FFFF'
     },
     header: {
         minHeight: 60,
@@ -60,13 +58,14 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         marginHorizontal:60,
         borderRadius: 10,
-        marginTop: 100,
+        marginTop: 5,
 
     },
     conteudoFacebook:{
         flex: 1,
         justifyContent: 'flex-end',
         paddingVertical: 20,
+        backgroundColor: '#FFFF',
         
     },
   }
