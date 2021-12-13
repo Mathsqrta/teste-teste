@@ -10,28 +10,17 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigatorProps } from '@react-navigation/native-stack/lib/typescript/src/types';
 import { StackNavigatorParamList } from '../../../types';
 import { Post } from '../post'; 
+//import { DM } from '../DM';
 
 const obj1 = {backgroundColor: "blue", marginTop: 0};
-
+//descobrir como colocar essa bosta no footer e como botar imagem nessa caralha q odio 
+//https://www.youtube.com/watch?v=9HOniatXGlg VER ESSA MERDA
 const LinkItem = (props:any) => {
   return(
-      <Text style = {stylesLink.text}> {props.name}</Text>
+      <Image style = {styles.footer} source={require("../../assets/raissao.jpeg")}> {props.name}</Image>
     );
 }
 
-const LinksImportantes = () => {
-
-  return(<View style={stylesLinksImportantes.container}>
-    
-    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/homepage.png")}></Image>}/>
-    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/search.png")}></Image>}/>
-    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/video.png")}></Image>}/>
-    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/bag.png")}></Image>}/>
-    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/profile.png")}></Image>}/>
-
-      </View>
-      );
-};
 type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Home">
 const Home = () => {
 
@@ -62,7 +51,7 @@ const navigation = useNavigation<HomeProps>();
         </TouchableOpacity>
         <ScrollView> 
           <Post />
-          <Post />
+          <Post /> 
           <Post />
           <Post />
         </ScrollView> 
@@ -70,8 +59,21 @@ const navigation = useNavigation<HomeProps>();
 
         <View style={styles.conteudoFacebook}>
         </View>
+        
       </View>
     );
 }
+const LinksImportantes = () => {
 
+  return(<View style={stylesLinksImportantes.container}>
+    
+    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/homepage.png")}></Image>}/>
+    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/search.png")}></Image>}/>
+    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/video.png")}></Image>}/>
+    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/bag.png")}></Image>}/>
+    <LinkItem name = {<Image style={{marginLeft: 6, marginRight: 3}} source={require("../../assets/profile.png")}></Image>}/>
+
+      </View>
+      );
+};
 export default Home;

@@ -16,5 +16,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container:{
     flex:1,
-  }
+    justifyContent: 'center',
+  },
 })
+//entrar aqui depois pra mudar o justify content!!!!
+//tentei colocar a propriedade de responsividade ao tamanho da tela do celular pra tela do pc
+//mas acho q n vai rolar

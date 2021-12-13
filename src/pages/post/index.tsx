@@ -128,6 +128,6 @@ const styles = StyleSheet.create({
     alignHeader:{
         flexDirection: "row",
         alignItems: 'center',
-        alignContent: 'space-between',
+        justifyContent: 'space-between',
     }
 });

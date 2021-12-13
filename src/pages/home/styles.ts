@@ -18,7 +18,7 @@ export const stylesLinksImportantes = StyleSheet.create({
       paddingHorizontal: 20,
       paddingVertical: 10,
       backgroundColor: 'black',
-      marginTop: 0,
+      marginBottom: 0,
     }
   
 });
@@ -52,6 +52,9 @@ export const styles = StyleSheet.create({
         backgroundColor: '#FFFF',
         
     },
+    footer:{
+
+    }
   }
 
 
