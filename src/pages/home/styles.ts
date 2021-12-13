@@ -17,7 +17,7 @@ export const stylesLinksImportantes = StyleSheet.create({
       justifyContent: 'space-between',
       paddingHorizontal: 20,
       paddingVertical: 10,
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'black',
       marginTop: 0,
     }
   
@@ -25,33 +25,17 @@ export const stylesLinksImportantes = StyleSheet.create({
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#FFFF'
+      backgroundColor: 'black'
     },
     header: {
         minHeight: 60,
         marginTop: 20,
-        backgroundColor: '#4369B0',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-    inputTextView:{
-        flex: 1,
-        backgroundColor: '#2C4877',
-        height: 40,
-        width: 30,
-        marginHorizontal: 10,
-        alignItems: 'center',
-        borderRadius: 28,
-        flexDirection: 'row',
-    },
-    textInput:{
-      color:"#F5FFFF",
-      flex: 1,
-      paddingRight: 10,
-    },
+    
     btt:{
-        backgroundColor: '#4369B0',
         color: '#FFFF',
         height: 40,
         alignItems: 'center',
