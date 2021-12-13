@@ -1,7 +1,60 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
+import Constants from 'expo-constants';
+
+const dadosPost = ([
+    {
+      id:1, 
+      nome:'Zezinho',
+      foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
+      legenda: "Hoje foi doido",
+    },
+    {
+      id:2, 
+      nome:'Raissao',
+      foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
+      legenda: "blabla", 
+    },
+    {
+      id:3, 
+      nome:'P.',
+      foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
+      legenda: "é o perdomas",
+    },
+    {
+      id:4, 
+      nome:'Meci_Careca',
+      foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
+      legenda: "mais um premio fml vamo q vamo",
+    },
+    {
+      id:5, 
+      nome:'www.allace',
+      foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
+      legenda: "jojo",
+    },
+    
+  ]);
 
 export const Post = () => {
+
+    /*const renderDadosPost = ({item})=>{
+        return(
+          <View style = {styles.containerPost}>
+              <Image 
+                style={styles.containerFlatListImage}
+                source={{uri:item.foto}}
+              />
+            <View>
+            <Text>{item.nome}</Text>
+            <Text>({item.ddd}) {item.telefone}</Text>
+            <Text>{item.email}</Text>
+            </View>
+          </View>
+          
+        );
+    }*/
+
 return(
     <View style={styles.container}>
         <View style={styles.headerPost}>
@@ -27,10 +80,10 @@ return(
                 <Image style={styles.shareIcones} source={require('../../assets/love.png')}/>
             </View>
             <View style={styles.share}>
-                <Image style={styles.shareIcones} source={require('../../assets/share1.png')}/>
+                <Image style={styles.shareIcones} source={require('../../assets/coment.png')}/>
             </View>
             <View style={styles.share}>
-                <Image style={styles.shareIcones} source={require('../../assets/comentario.png')}/>
+                <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
             </View>   
         </View>
         <View style={styles.footerPost}> 
@@ -45,7 +98,6 @@ export default Post;
 
 const styles = StyleSheet.create({
     container:{
-        padding: 5,
         backgroundColor: 'black',
         
     },
@@ -64,7 +116,6 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: 'space-around',
         marginLeft: 5,
-        
     },
     tituloPost:{
         fontWeight: 'bold', 
@@ -73,7 +124,7 @@ const styles = StyleSheet.create({
         color: "white",
     },
     img:{
-        marginLeft: 6,
+
     },
     postPublicado:{
 
@@ -87,35 +138,29 @@ const styles = StyleSheet.create({
         fontSize: 15,
     },
     imagemPost:{
-        marginTop:10,
-        width: 310,
-        height: 282,
+
+        width: "100%",
+        height: 350,
     },
     likes:{
         flexDirection: 'row',
-        alignItems: 'center',
         marginTop: 10,
         marginLeft: 20,
     },
     actionContainer:{
         flexDirection: 'row',
-        justifyContent: 'center',
-        marginVertical: 15,
+        marginVertical: 5,
     },
     shareIcones:{
-        height: 18,
-        width: 18,
+        height: 20,
+        width: 20,
     },
     share:{
         flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'center',
         marginRight: 15,
         marginLeft: 15,
     },
     footerPost:{
-        height: 43,
-        flexDirection: 'row',
     },
 
     options:{
@@ -123,7 +168,6 @@ const styles = StyleSheet.create({
         width: 30,
         alignContent: "flex-end",
         marginHorizontal: 5,
-        marginLeft: 100,
     },
     alignHeader:{
         flexDirection: "row",

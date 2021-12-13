@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, FlatList, Image, TextInput, ScrollView, TouchableOpacity, } from 'react-native';
 import Constants from 'expo-constants';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const dados = [
   {
@@ -75,7 +77,8 @@ const DATA2 = [
   },
 ];
 
-export default function App() {
+export function Direct() {
+
   const renderItemAgenda = ({ item }) => {
     return (
       <View style={styles.item}>
@@ -154,7 +157,7 @@ export default function App() {
             justifyContent: 'space-between',
             //backgroundColor:"red",  
           }}
-        />R
+        />
         </View>
         <FlatList
           data={dados}
@@ -165,6 +168,7 @@ export default function App() {
     </View>
   );
 }
+export default Direct;
 
 const styles = StyleSheet.create({
   container: {

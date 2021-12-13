@@ -1,60 +1,69 @@
 import { StyleSheet } from "react-native";
 
-export const stylesLink = StyleSheet.create({
-
-    text:{
-      marginTop: 0,  
-      color: '#4A4A4C',
-      fontSize: 13.71,
-    }
-  
-  });
-
-export const stylesLinksImportantes = StyleSheet.create({
+export const stylesMenuBar = StyleSheet.create({
 
     container:{
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      paddingHorizontal: 20,
-      paddingVertical: 10,
+      flexDirection: "row",
+      margin: 2,
       backgroundColor: 'black',
-      marginBottom: 0,
-    }
+      },
   
+});
+  
+export const stylesSupMenuBar = StyleSheet.create({
+    container:{
+      marginTop: 20,
+      flexDirection: 'row',
+      backgroundColor: 'black',
+    }
 });
 export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'black'
+      backgroundColor: 'black',
+      height: '100%',
+      alignContent: 'center',
     },
     header: {
-        minHeight: 60,
-        marginTop: 20,
+        minHeight:60,
+        marginTop: 5,
         flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        justifyContent: 'center',
     },
-    
-    btt:{
+    actionIg:{
+      marginLeft: 180,
+      flexDirection: "row",
+      padding: 5
+    },
+    bttAction:{
+      color: '#FFFF',
+    },
+    logoInsta:{
+      width: 110,
+      height: 37.5,
+      marginLeft: 5,
+    },
+    bttMenuBar:{
+        alignItems: "flex-start",
         color: '#FFFF',
         height: 40,
-        alignItems: 'center',
         justifyContent: 'center',
-        marginHorizontal:60,
-        borderRadius: 10,
+        marginHorizontal: 24,
         marginTop: 5,
 
     },
-    conteudoFacebook:{
-        flex: 1,
-        justifyContent: 'flex-end',
-        paddingVertical: 20,
-        backgroundColor: '#FFFF',
-        
-    },
     footer:{
-
-    }
+      backgroundColor: 'black',
+      flexDirection: "row",
+      width: 108,
+    },
+    imgHeader:{
+      height: 20, 
+      width: 20, 
+      marginRight: 10
+    },
+    
+    
   }
 
 
