@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     actionIg:{
-      marginLeft: 170,
+      marginLeft: 160,
       flexDirection: "row",
       padding: 5
     },
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
     logoInsta:{
       width: 110,
       height: 37.5,
-      marginLeft: 30,
+      marginLeft: 10,
     },
     bttMenuBar:{
         alignItems: "flex-start",
@@ -60,18 +60,22 @@ export const styles = StyleSheet.create({
     imgHeader:{
       height: 20, 
       width: 20, 
-      marginRight: 10
+      marginRight: 10,
+
     },
     bttstories:{
       width:50,
       height: 50,
       borderRadius: 50,
+      borderColor: "#148BF5",
+      borderWidth: 2,
+      marginLeft: 9,
       
     },
     Stories:{
         flexDirection: "row",
-        justifyContent: "center",
-        minHeight: 200,
+        alignContent: "center",
+        minHeight: 50,
 
     }
   }

@@ -16,7 +16,7 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import { StackNavigatorParamList } from "../../../types";
 import {useNavigation} from '@react-navigation/native';
 
-type DirectProps = NativeStackNavigationProp<StackNavigatorParamList,"Direct">;
+type HomeProps = NativeStackNavigationProp<StackNavigatorParamList,"Direct">;
 
 const dados = [
   {
@@ -88,7 +88,7 @@ const DATA2 = [
 
 export default function App() {
 
-  const navigation = useNavigation<DirectProps>();
+  const navigation = useNavigation<HomeProps>();
 
     function irParaTelaHome(){
         navigation.navigate('Home');
@@ -162,8 +162,7 @@ export default function App() {
           flexDirection: 'row',
           flexWrap: 'nowrap',
           justifyContent: 'space-between',
-          //alignContent: 'center',
-          //backgroundColor:"red",  
+        
       }}
       />
         </View>

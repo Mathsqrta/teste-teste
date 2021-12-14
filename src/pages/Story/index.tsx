@@ -16,12 +16,12 @@ export const Story = () => {
     return(
         <View style={styles.container}> 
             <View style={styles.header}> 
-            <Image style={ styles.avatar} source={require("../../assets/raissao.jpeg")}></Image>
-            <Text style={{color:"white", fontWeight: "800", marginLeft: 10, fontSize:15, marginTop: 15}}> Raissao</Text>
+            <Image style={ styles.avatar} source={require("../../assets/bob.png")}></Image>
+            <Text style={{color:"white", fontWeight: "800", marginLeft: 10, fontSize:15, marginTop: 15}}> Clone do Instagram</Text>
             </View>
             <View style={styles.body}>  
                 <View style={styles.imagem}>
-                    <Image source={require("../../assets/raissao.jpeg")}></Image>
+                    <Image source={require("../../assets/Lembrete.png")}></Image>
                 </View>  
             </View>
             <View style={styles.footer}>

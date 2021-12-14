@@ -10,8 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigatorProps } from '@react-navigation/native-stack/lib/typescript/src/types';
 import { StackNavigatorParamList } from '../../../types';
 import { Post } from '../post'; 
-import { Story } from '../Story';
-//import { Direct } from '../direct';
+import { direct } from '../direct';
 
 type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Home">
 
@@ -49,18 +48,29 @@ const navigation = useNavigation<HomeProps>();
           </TouchableOpacity>
           </View>
         </View>
-        <View style={styles.Stories}> 
-          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/raissao.jpeg")}></Image> </TouchableOpacity>
-          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/mecicareca.jpg")}></Image> </TouchableOpacity>
-          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/pe.jpg")}></Image> </TouchableOpacity>
-          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/moleza.jpg")}></Image>  </TouchableOpacity>
-          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/alek.jpg")}></Image>  </TouchableOpacity>
-        </View>
+        
       </View>
         
       <ScrollView> 
+        <View style={styles.Stories}> 
+        <TouchableOpacity style={styles.bttAction} onPress={irParaTelaStories}> 
+            <Image style={styles.bttstories} source={require("../../assets/rai.jpeg")}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.bttAction} onPress={irParaTelaStories}> 
+            <Image style={styles.bttstories} source={require("../../assets/cat.jpeg")}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.bttAction} onPress={irParaTelaStories}> 
+            <Image style={styles.bttstories} source={require("../../assets/meo.jpeg")}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.bttAction} onPress={irParaTelaStories}> 
+            <Image style={styles.bttstories} source={require("../../assets/www.jpeg")}></Image>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.bttAction} onPress={irParaTelaStories}> 
+            <Image style={styles.bttstories} source={require("../../assets/pe.jpg")}></Image>
+        </TouchableOpacity>
+        </View>
         <Post /> 
-        <Post /> 
+        <Post />
       </ScrollView> 
       <StatusBar style="auto" />
 
