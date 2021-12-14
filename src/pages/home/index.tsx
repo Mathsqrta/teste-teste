@@ -13,11 +13,6 @@ import { Post } from '../post';
 import { Story } from '../Story';
 //import { Direct } from '../direct';
 
-/*const BarraMenuBot = ()=> {
-    return(
-      <Image style={{marginLeft: 6, marginRight: 3}} source={require(.name)}></Image>
-    );
-}*/
 type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Home">
 
 const Home = () => {
@@ -44,12 +39,22 @@ const navigation = useNavigation<HomeProps>();
           </TouchableOpacity>
           <View style={styles.actionIg}>
           <TouchableOpacity style={styles.bttAction} onPress={irParaTelaHome}> 
+            <Image style={styles.imgHeader} source={require("../../assets/more.png")}></Image>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.bttAction} onPress={irParaTelaHome}> 
             <Image style={styles.imgHeader} source={require("../../assets/love.png")}></Image>
           </TouchableOpacity>
           <TouchableOpacity style={styles.bttAction} onPress={irParaTelaDirect}> 
             <Image style={styles.imgHeader} source={require("../../assets/btnmensagem.png")}></Image>
           </TouchableOpacity>
           </View>
+        </View>
+        <View style={styles.Stories}> 
+        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
+        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
+        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
+        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
+        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
         </View>
       </View>
         
@@ -76,15 +81,15 @@ const MenuBar = () => {
 
     <TouchableOpacity style={styles.bttMenuBar} onPress={require("../home")}>
       <Image style={{width: 25, height: 25, marginBottom: 5}} source={require("../../assets/homepage.png")}></Image>
-      </TouchableOpacity>
-    <TouchableOpacity style={styles.bttMenuBar}>
-    <Image style={{width: 25, height: 25, marginBottom: 5}} source={require("../../assets/search.png")}></Image>
     </TouchableOpacity>
     <TouchableOpacity style={styles.bttMenuBar}>
-    <Image style={{width: 20, height: 20, marginBottom: 5}} source={require("../../assets/video.png")}></Image>
+      <Image style={{width: 25, height: 25, marginBottom: 5}} source={require("../../assets/search.png")}></Image>
     </TouchableOpacity>
     <TouchableOpacity style={styles.bttMenuBar}>
-    <Image style={{width: 25, height: 25, marginBottom: 5}} source={require("../../assets/bag.png")}></Image>
+      <Image style={{width: 20, height: 20, marginBottom: 5}} source={require("../../assets/video.png")}></Image>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.bttMenuBar}>
+      <Image style={{width: 25, height: 25, marginBottom: 5}} source={require("../../assets/bag.png")}></Image>
     </TouchableOpacity>
     <TouchableOpacity style={styles.bttMenuBar}>
       <Image style={{width: 28, height: 28, borderRadius:50, marginBottom: 5}} source={require("../../assets/profile.png")}></Image>

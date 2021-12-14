@@ -7,12 +7,12 @@ import Story from "./pages/Story";
 //import Direct from './pages/direct';
 
 const Stack = createNativeStackNavigator();
-//const Tab = createBottomTabNavigator();
+// Rotas, faz a navegação entre as telas, 
 
 const Routes = () =>{
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home"
+            <Stack.Navigator initialRouteName="Story"
                 screenOptions={{
                     headerShown:false,
                 }}

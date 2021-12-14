@@ -1,8 +1,16 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, FlatList, Image, TextInput, ScrollView, TouchableOpacity, } from 'react-native';
+
+import {
+  Text,
+  View,
+  StyleSheet,
+  FlatList,
+  Image,
+  TextInput,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import Constants from 'expo-constants';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const dados = [
   {
@@ -77,8 +85,7 @@ const DATA2 = [
   },
 ];
 
-export function Direct() {
-
+export default function App() {
   const renderItemAgenda = ({ item }) => {
     return (
       <View style={styles.item}>
@@ -168,7 +175,6 @@ export function Direct() {
     </View>
   );
 }
-export default Direct;
 
 const styles = StyleSheet.create({
   container: {

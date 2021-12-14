@@ -1,35 +1,40 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Image, FlatList } from "react-native";
 import Constants from 'expo-constants';
 
 const dadosPost = ([
     {
       id:1, 
       nome:'Zezinho',
+      avatar: <Image source={require('../../assets/raissao.jpeg')}/>,
       foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
       legenda: "Hoje foi doido",
     },
     {
       id:2, 
       nome:'Raissao',
+      avatar: <Image source={require('../../assets/raissao.jpeg')}/>,
       foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
       legenda: "blabla", 
     },
     {
       id:3, 
       nome:'P.',
+      avatar: <Image source={require('../../assets/raissao.jpeg')}/>,
       foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
       legenda: "é o perdomas",
     },
     {
       id:4, 
       nome:'Meci_Careca',
+      avatar: <Image source={require('../../assets/raissao.jpeg')}/>,
       foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
       legenda: "mais um premio fml vamo q vamo",
     },
     {
       id:5, 
       nome:'www.allace',
+      avatar: <Image source={require('../../assets/raissao.jpeg')}/>,
       foto:'https://media-exp1.licdn.com/dms/image/C4E03AQEsiedG-o1zAg/profile-displayphoto-shrink_200_200/0/1517489275008?e=1640217600&v=beta&t=YCK9H8tCKjIaTiU3z1plT7rG2DuJXmc6IEgndNUoDOI',
       legenda: "jojo",
     },
@@ -38,22 +43,21 @@ const dadosPost = ([
 
 export const Post = () => {
 
-    /*const renderDadosPost = ({item})=>{
+    const renderDadosPost = ({item})=>{
         return(
-          <View style = {styles.containerPost}>
-              <Image 
-                style={styles.containerFlatListImage}
-                source={{uri:item.foto}}
-              />
-            <View>
-            <Text>{item.nome}</Text>
-            <Text>({item.ddd}) {item.telefone}</Text>
-            <Text>{item.email}</Text>
-            </View>
+          <View style = {styles.img}>
+              <View style={styles.nome}>
+                  <Text>{item.nome}</Text>
+              </View>
+              <Image style={styles.img} source={{uri:item.foto}}/>
+              <View>
+                  <Text> {item.nome}</Text>
+                  <Text>{item.legenda}</Text>
+              </View>
           </View>
           
         );
-    }*/
+    }
 
 return(
     <View style={styles.container}>
@@ -62,7 +66,7 @@ return(
             <View style={styles.alignHeader}> 
             <View style={styles.texto}> 
             <TouchableOpacity> 
-                <Text style={styles.tituloPost}>Raissao</Text>
+                <Text style={styles.nome}>Raissao</Text>
             </TouchableOpacity>
             </View>
             <View style={styles.options}> 
@@ -85,10 +89,15 @@ return(
             <View style={styles.share}>
                 <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
             </View>   
-        </View>
-        <View style={styles.footerPost}> 
-            
-        </View>
+            <View style={styles.shareDm}>
+                <Image style={styles.shareIcones} source={require('../../assets/bookmark.png')}/>
+            </View>  
+            </View>
+            <View style={styles.legenda}> 
+                <Text style={{color: "white", fontWeight: "800", }}>Raissao</Text>
+                <Text style={{color: "white",}}> Legenda hiper criativa</Text> 
+            </View>
+        
     </View>
 
 )
@@ -103,12 +112,13 @@ const styles = StyleSheet.create({
     },
     headerPost:{
         flexDirection: 'row',
-        paddingLeft: 20,
+        paddingLeft: 10,
         paddingTop: 20,
+        alignContent: 'center',
     },
     foto:{
-        height: 40,
-        width: 40,
+        height: 35,
+        width: 35,
         borderRadius: 50,
         backgroundColor: '#4369B0',
     },
@@ -117,57 +127,60 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         marginLeft: 5,
     },
-    tituloPost:{
+    nome:{
         fontWeight: 'bold', 
-        fontSize: 18,
-        marginBottom: 4,
+        fontSize: 15,
+        marginBottom: 5,
         color: "white",
     },
     img:{
 
     },
     postPublicado:{
+        width: "100%",
 
     },
-    textoPost:{
-        fontSize: 15,
+    legenda:{
+        color: 'white',
+        flexDirection: "row",
+        marginLeft: 5,
+        marginTop: 2,
+        fontSize: 12,
+
 
     },
-    link:{
-        color: '#4D6196',
-        fontSize: 15,
-    },
+
     imagemPost:{
-
         width: "100%",
         height: 350,
     },
-    likes:{
-        flexDirection: 'row',
-        marginTop: 10,
-        marginLeft: 20,
-    },
+    
     actionContainer:{
         flexDirection: 'row',
-        marginVertical: 5,
+        marginTop: 9,
     },
     shareIcones:{
-        height: 20,
-        width: 20,
+        height: 22,
+        width: 22,
     },
     share:{
         flexDirection: 'row',
-        marginRight: 15,
-        marginLeft: 15,
+        marginLeft:10,
+    },
+    shareDm:{
+        flexDirection: 'row',
+        marginLeft:230,
     },
     footerPost:{
-    },
+        fontSize: 15,
+        color: "white",
 
+    },
     options:{
         height: 30,
         width: 30,
         alignContent: "flex-end",
-        marginHorizontal: 5,
+        marginHorizontal: 95,
     },
     alignHeader:{
         flexDirection: "row",

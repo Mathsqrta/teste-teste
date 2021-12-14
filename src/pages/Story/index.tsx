@@ -20,20 +20,15 @@ export const Story = () => {
         <View style={styles.container}> 
             <View style={styles.body}>  
                 <View style={styles.imagem}>
-                    <Image source={require("../../assets/facebook.png")}></Image>
-                    <Text style={{color: "white", marginRight: 3}}>yeye</Text>
-                    <Image source={require("../../assets/seta.png")}></Image>
+                    <Image source={require("../../assets/raissao.jpeg")}></Image>
                 </View>
-                
-                <TouchableOpacity style={styles.btt} onPress={irParaStory}>
-                    <Image source={require("../../assets/seta.png")}/>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.bttesquerda} onPress={irParaStory}>
-                    <Image source={require("../../assets/seta.png")}/>
-                </TouchableOpacity>
+    
                 <TouchableOpacity style={styles.bttHome} onPress={irParaHome}>
                     <Image source={require("../../assets/seta.png")}/>
                 </TouchableOpacity>
+            </View>
+            <View style={styles.footer}>
+
             </View>
         </View>   
          

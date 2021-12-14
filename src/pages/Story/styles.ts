@@ -9,17 +9,15 @@ export const styles = StyleSheet.create({
     },
     body:{
         backgroundColor: "red",
-        height: "50%",
     },
     imagem:{
-        
+        width: "100%",
+        height: 80,
+
     },
     btt:{
         borderRadius: 50,
         borderColor: "white",
-
-    },
-    bttesquerda:{
 
     },
     bttHome:{
@@ -28,5 +26,12 @@ export const styles = StyleSheet.create({
     Story:{
         backgroundColor: 'white',
 
+    },
+    footer:{
+        backgroundColor: "black",
+        minHeight: 40,
+        width:"100%",
+        position: "relative",
+        
     }
 });

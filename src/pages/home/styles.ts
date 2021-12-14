@@ -31,17 +31,17 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     actionIg:{
-      marginLeft: 180,
+      marginLeft: 170,
       flexDirection: "row",
       padding: 5
     },
     bttAction:{
-      color: '#FFFF',
+      
     },
     logoInsta:{
       width: 110,
       height: 37.5,
-      marginLeft: 5,
+      marginLeft: 30,
     },
     bttMenuBar:{
         alignItems: "flex-start",
@@ -62,8 +62,13 @@ export const styles = StyleSheet.create({
       width: 20, 
       marginRight: 10
     },
-    
-    
+    bttstories:{
+      width:50,
+      height: 50,
+      color: "blue",
+      borderRadius: 50,
+      
+    }
   }
 
 
