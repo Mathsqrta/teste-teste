@@ -24,7 +24,7 @@ const navigation = useNavigation<HomeProps>();
   function irParaTelaDirect(){
     navigation.navigate('Direct');
   }
-  function irParaTelaStory(){
+  function irParaTelaStories(){
     navigation.navigate('Story');
   }
 
