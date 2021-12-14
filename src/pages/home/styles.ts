@@ -68,6 +68,9 @@ export const styles = StyleSheet.create({
       color: "blue",
       borderRadius: 50,
       
+    },
+    Stories:{
+      
     }
   }
 
