@@ -65,11 +65,13 @@ export const styles = StyleSheet.create({
     bttstories:{
       width:50,
       height: 50,
-      color: "blue",
       borderRadius: 50,
       
     },
     Stories:{
+        flexDirection: "row",
+        justifyContent: "center",
+        minHeight: 200,
 
     }
   }

@@ -50,20 +50,17 @@ const navigation = useNavigation<HomeProps>();
           </View>
         </View>
         <View style={styles.Stories}> 
-        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
-        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
-        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
-        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
-        <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Story /> </TouchableOpacity>
+          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/raissao.jpeg")}></Image> </TouchableOpacity>
+          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/mecicareca.jpg")}></Image> </TouchableOpacity>
+          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/pe.jpg")}></Image> </TouchableOpacity>
+          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/moleza.jpg")}></Image>  </TouchableOpacity>
+          <TouchableOpacity style={styles.bttstories} onPress={irParaTelaStories}> <Image source={require("../../assets/alek.jpg")}></Image>  </TouchableOpacity>
         </View>
       </View>
         
       <ScrollView> 
         <Post /> 
         <Post /> 
-        <Post />
-        <Post />
-        <Post />
       </ScrollView> 
       <StatusBar style="auto" />
 
@@ -99,21 +96,5 @@ const MenuBar = () => {
       );
 };
 
-/*const SupMenuBar = () => {
-
-  return(
-    <View style={stylesSupMenuBar.container}>
-    <TouchableOpacity style={styles.btt} onPress={irParaTelaHome}> 
-        <Image style={{height: 47, width: 140}} source={require("../../assets/instagram.png")}></Image>
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.btt} onPress={irParaTelaHome}> 
-      <Image style={{height: 20, width: 20, marginLeft: 10}} source={require("../../assets/love.png")}></Image>
-    </TouchableOpacity>
-    <TouchableOpacity style={styles.btt} onPress={irParaTelaDirect}> 
-       <Image style={{height: 20, width: 20, marginLeft: 10}} source={require("../../assets/btnmensagem.png")}></Image>
-    </TouchableOpacity>
-  </View>
-  );
-}*/
 
 export default Home;

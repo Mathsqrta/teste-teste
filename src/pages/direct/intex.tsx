@@ -16,7 +16,7 @@ import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import { StackNavigatorParamList } from "../../../types";
 import {useNavigation} from '@react-navigation/native';
 
-type LoginProps = NativeStackNavigationProp<StackNavigatorParamList,"Login">;
+type DirectProps = NativeStackNavigationProp<StackNavigatorParamList,"Direct">;
 
 const dados = [
   {
@@ -88,7 +88,7 @@ const DATA2 = [
 
 export default function App() {
 
-  const navigation = useNavigation<LoginProps>();
+  const navigation = useNavigation<DirectProps>();
 
     function irParaTelaHome(){
         navigation.navigate('Home');

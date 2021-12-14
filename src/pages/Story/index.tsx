@@ -13,22 +13,21 @@ export const Story = () => {
     function irParaHome(){
         navigation.navigate('Home');
       }
-    function irParaStory(){
-        navigation.navigate('Story')
-    }
     return(
         <View style={styles.container}> 
+            <View style={styles.header}> 
+            <Image style={ styles.avatar} source={require("../../assets/raissao.jpeg")}></Image>
+            <Text style={{color:"white", fontWeight: "800", marginLeft: 10, fontSize:15, marginTop: 15}}> Raissao</Text>
+            </View>
             <View style={styles.body}>  
                 <View style={styles.imagem}>
                     <Image source={require("../../assets/raissao.jpeg")}></Image>
-                </View>
-    
-                <TouchableOpacity style={styles.bttHome} onPress={irParaHome}>
-                    <Image source={require("../../assets/seta.png")}/>
-                </TouchableOpacity>
+                </View>  
             </View>
             <View style={styles.footer}>
-
+                <TouchableOpacity style={styles.bttHome} onPress={irParaHome}>
+                    <Text style={{color:"white", fontWeight: "800"}}> Voltar para Home</Text>
+                </TouchableOpacity>
             </View>
         </View>   
          
