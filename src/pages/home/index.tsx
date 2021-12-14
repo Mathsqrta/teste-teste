@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigatorProps } from '@react-navigation/native-stack/lib/typescript/src/types';
 import { StackNavigatorParamList } from '../../../types';
 import { Post } from '../post'; 
-import { direct } from '../direct';
+//import { direct } from '../direct';
 
 type HomeProps = NativeStackNavigationProp<StackNavigatorParamList, "Home">
 
