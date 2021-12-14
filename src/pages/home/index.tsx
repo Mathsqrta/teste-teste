@@ -61,9 +61,6 @@ const navigation = useNavigation<HomeProps>();
       <ScrollView> 
         <Post /> 
         <Post /> 
-        <Post />
-        <Post />
-        <Post />
       </ScrollView> 
       <StatusBar style="auto" />
 

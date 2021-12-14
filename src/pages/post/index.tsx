@@ -95,9 +95,155 @@ return(
             </View>
             <View style={styles.legenda}> 
                 <Text style={{color: "white", fontWeight: "800", }}>Raissao</Text>
-                <Text style={{color: "white",}}> Legenda hiper criativa</Text> 
+                <Text style={{color: "white"}}> Legenda hiper criativa</Text> 
+            </View>
+
+            <View style={styles.headerPost}>
+                 <Image  style={styles.foto} source={require('../../assets/mecicareca.jpg')}/>
+            <View style={styles.alignHeader}> 
+            <View style={styles.texto}> 
+            <TouchableOpacity> 
+                <Text style={styles.nome}>mecicareca</Text>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.options}> 
+                <TouchableOpacity> 
+                    <Image  style={styles.options} source={require('../../assets/options.png')}/>
+                </TouchableOpacity> 
+            </View>
+            </View>
+        </View>
+        <View style={styles.postPublicado}> 
+            <Image  style={styles.imagemPost} source={require('../../assets/mecicareca.jpg')}/>
+        </View>
+        <View  style={styles.actionContainer}> 
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/love.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/coment.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
+            </View>   
+            <View style={styles.shareDm}>
+                <Image style={styles.shareIcones} source={require('../../assets/bookmark.png')}/>
+            </View>  
+            </View>
+            <View style={styles.legenda}> 
+                <Text style={{color: "white", fontWeight: "800", }}>mecicareca</Text>
+                <Text style={{color: "white"}}> Mais um titulo nosso fml vamo q vamo</Text> 
             </View>
         
+            <View style={styles.headerPost}>
+                 <Image  style={styles.foto} source={require('../../assets/moleza.jpg')}/>
+            <View style={styles.alignHeader}> 
+            <View style={styles.texto}> 
+            <TouchableOpacity> 
+                <Text style={styles.nome}>Moleza</Text>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.options}> 
+                <TouchableOpacity> 
+                    <Image  style={styles.options} source={require('../../assets/options.png')}/>
+                </TouchableOpacity> 
+            </View>
+            </View>
+        </View>
+        <View style={styles.postPublicado}> 
+            <Image  style={styles.imagemPost} source={require('../../assets/moleza.jpg')}/>
+        </View>
+        <View  style={styles.actionContainer}> 
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/love.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/coment.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
+            </View>   
+            <View style={styles.shareDm}>
+                <Image style={styles.shareIcones} source={require('../../assets/bookmark.png')}/>
+            </View>  
+            </View>
+            <View style={styles.legenda}> 
+                <Text style={{color: "white", fontWeight: "800", }}>Moleza</Text>
+                <Text style={{color: "white"}}> arriba</Text> 
+            </View>
+
+            <View style={styles.headerPost}>
+                 <Image  style={styles.foto} source={require('../../assets/alek.jpg')}/>
+            <View style={styles.alignHeader}> 
+            <View style={styles.texto}> 
+            <TouchableOpacity> 
+                <Text style={styles.nome}>AlekJOJO</Text>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.options}> 
+                <TouchableOpacity> 
+                    <Image  style={styles.options} source={require('../../assets/options.png')}/>
+                </TouchableOpacity> 
+            </View>
+            </View>
+        </View>
+        <View style={styles.postPublicado}> 
+            <Image  style={styles.imagemPost} source={require('../../assets/alek.jpg')}/>
+        </View>
+        <View  style={styles.actionContainer}> 
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/love.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/coment.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
+            </View>   
+            <View style={styles.shareDm}>
+                <Image style={styles.shareIcones} source={require('../../assets/bookmark.png')}/>
+            </View>  
+            </View>
+            <View style={styles.legenda}> 
+                <Text style={{color: "white", fontWeight: "800", }}>AlekJOJO</Text>
+                <Text style={{color: "white"}}> os cara são bunito</Text> 
+            </View>
+            <View style={styles.headerPost}>
+                 <Image  style={styles.foto} source={require('../../assets/pe.jpg')}/>
+            <View style={styles.alignHeader}> 
+            <View style={styles.texto}> 
+            <TouchableOpacity> 
+                <Text style={styles.nome}>Pomodoro</Text>
+            </TouchableOpacity>
+            </View>
+            <View style={styles.options}> 
+                <TouchableOpacity> 
+                    <Image  style={styles.options} source={require('../../assets/options.png')}/>
+                </TouchableOpacity> 
+            </View>
+            </View>
+        </View>
+        <View style={styles.postPublicado}> 
+            <Image  style={styles.imagemPost} source={require('../../assets/pomodoro.jpg')}/>
+        </View>
+        <View  style={styles.actionContainer}> 
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/love.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/coment.png')}/>
+            </View>
+            <View style={styles.share}>
+                <Image style={styles.shareIcones} source={require('../../assets/direct-instagram.png')}/>
+            </View>   
+            <View style={styles.shareDm}>
+                <Image style={styles.shareIcones} source={require('../../assets/bookmark.png')}/>
+            </View>  
+            </View>
+            <View style={styles.legenda}> 
+                <Text style={{color: "white", fontWeight: "800", }}>Pomodoro</Text>
+                <Text style={{color: "white"}}> tomates de alta qualidade</Text> 
+            </View>
     </View>
 
 )

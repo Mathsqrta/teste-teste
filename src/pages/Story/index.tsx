@@ -13,9 +13,6 @@ export const Story = () => {
     function irParaHome(){
         navigation.navigate('Home');
       }
-    function irParaStory(){
-        navigation.navigate('Story')
-    }
     return(
         <View style={styles.container}> 
             <View style={styles.header}> 
